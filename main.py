@@ -8,6 +8,15 @@ from utils.plotting_scripts import plot_online_return, plot_online_std
 
 
 if __name__ == '__main__':
+
+    # ---------- load args from JSON ----------
+    par_file = sys.argv[1]
+    args = json.load(open(par_file))
+
+    # required from JSON
+    env_id = args["env_id"]          # e.g. "halfcheetah-medium-v2"
+    algo   = args["algo"]            # "td3", "bc", "combined"
+
     model_info = {'layers':[256,256,256], ##base layer model spec
                   'hidden_activation':'ReLU', ##activation for hidden laeyrs
                   'critic_final_activation':'',
@@ -97,12 +106,16 @@ if __name__ == '__main__':
     np.random.seed(seed)
 
 
-    td3_n_offline(config_dict)
+    # ---------- choose which routine to run ----------
+    if algo == "td3":
+        td3_n_offline(config_dict)
+    elif algo == "bc":
+        bc_offline(config_dict)
+    elif algo == "combined":
+        combined(config_dict)
+    else:
+        raise ValueError(f"Unknown algo '{algo}', expected 'td3', 'bc' or 'combined'.")
 
-   #bc_offline(config_dict)
-
-   #combined(config_dict)
-    
    #plot_online_return(config_dict)
    #plot_online_std(config_dict)
 

@@ -1,0 +1,5 @@
+{
+  "env_id": "antmaze-umaze-diverse-v2",
+  "algo": "td3",
+  "run_id": "antmaze_u_v2_td3"
+}
