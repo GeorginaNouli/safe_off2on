@@ -39,7 +39,10 @@ done
 export TARGET_STDOUT_LOG="${TARGET_LOG_DIRECTORY}/${CONSOLE_LOG_NAME}"
 export TARGET_STDERR_LOG="${TARGET_LOG_DIRECTORY}/${ERROR_CONSOLE_LOG_NAME}"
 
-case ${NODE_TYPE} in 
+case ${NODE_TYPE} in
+    "GPU_NEW_ONLY")
+        _NODES="--exclude=osm-cpu-[1-6],osm-gpu-[1-2]"
+        ;; 
     "GPU_ONLY")
         _NODES="--exclude=osm-cpu-[1-6]"
         ;;

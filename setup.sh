@@ -24,5 +24,5 @@ if [ ! -d "$MUJOCO_DIR/mujoco210" ]; then
     rm "$MUJOCO_DIR/mujoco210.tar.gz"
 fi
 
-sudo apt install libglew-dev
-unzip models.zip
+#sudo apt install libglew-dev
+#unzip models.zip

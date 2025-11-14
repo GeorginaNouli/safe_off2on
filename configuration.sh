@@ -13,8 +13,8 @@ export EMAIL="georgina.nouli@tum.de"
 export EXECUTABLE="./executable"
 
 # How many CPUs each run requires
-export CPUS_PER_RUN=7
-export MEMORY_PER_CPU="62G"
+export CPUS_PER_RUN=32
+export MEMORY_PER_CPU="3G"
 
 # Maximum time limit is 5h
 export MINUTES_PER_RUN=5000
@@ -23,9 +23,10 @@ export GPUS_PER_RUN=1
 # Possible choices: urgent > normal
 export QOS="normal"
 # On which nodes to run, possible values: CPU_ONLY, GPU_ONLY, ANY
-export NODE_TYPE="GPU_ONLY"
+export NODE_TYPE="GPU_NEW_ONLY"
 
 # Set up your environment here, e.g., load modules, activate virtual environments
+source "miniconda3/etc/profile.d/conda.sh"
 module load python/3.10.2
 conda activate rlenv
 

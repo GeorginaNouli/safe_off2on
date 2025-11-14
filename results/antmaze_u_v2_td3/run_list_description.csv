@@ -1,0 +1,7 @@
+env_id,algo,run_id
+halfcheetah-medium-v2,td3,halfcheetah_m_v2_td3
+halfcheetah-medium-v2,bc,halfcheetah_m_v2_bc
+halfcheetah-medium-v2,combined,halfcheetah_m_v2_combined
+antmaze-umaze-diverse-v2,td3,antmaze_u_v2_td3
+antmaze-umaze-diverse-v2,bc,antmaze_u_v2_bc
+antmaze-umaze-diverse-v2,combined,antmaze_u_v2_combined
