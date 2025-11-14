@@ -1,7 +1,7 @@
 Seq	Host	Starttime	JobRuntime	Send	Receive	Exitval	Signal	Command
-2	:	1763159346.794	    29.700	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_bc args/halfcheetah_m_v2_bc.json
-1	:	1763159346.292	    30.641	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_td3 args/halfcheetah_m_v2_td3.json
-3	:	1763159347.295	    30.460	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_combined args/halfcheetah_m_v2_combined.json
-4	:	1763159347.796	    30.438	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_td3 args/antmaze_u_v2_td3.json
-5	:	1763159348.303	    30.839	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_bc args/antmaze_u_v2_bc.json
-6	:	1763159348.801	    31.059	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_combined args/antmaze_u_v2_combined.json
+1	:	1763160392.887	    37.016	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_td3 args/halfcheetah_m_v2_td3.json
+3	:	1763160393.890	    64.553	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_combined args/halfcheetah_m_v2_combined.json
+4	:	1763160394.389	    93.262	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_td3 args/antmaze_u_v2_td3.json
+5	:	1763160394.887	   121.330	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_bc args/antmaze_u_v2_bc.json
+6	:	1763160395.386	   149.715	0	0	1	0	scripts/queue_job.sh antmaze_u_v2_combined args/antmaze_u_v2_combined.json
+2	:	1763160393.392	   180.331	0	0	1	0	scripts/queue_job.sh halfcheetah_m_v2_bc args/halfcheetah_m_v2_bc.json

@@ -3,6 +3,9 @@
 #SCENARIO=$1
 SCENARIO="Runs"
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/georgina.nouli/.mujoco/mujoco210/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+
 # General Job-related configuration
 export JOB_NAME="Final ${SCENARIO}"
 export JOBLOG_NAME="${SCENARIO}"
@@ -29,6 +32,10 @@ export NODE_TYPE="GPU_NEW_ONLY"
 source "miniconda3/etc/profile.d/conda.sh"
 module load python/3.10.2
 conda activate rlenv
+
+export CPATH=$CONDA_PREFIX/include:$CPATH
+export LIBRARY_PATH=$CONDA_PREFIX/lib:$LIBRARY_PATH
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 
 # Defaults for other run-related variables.
 # These can be ignored in most cases
